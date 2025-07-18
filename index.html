@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>IP Logger | رصد الزيارات</title>
+  <style>
+    body { font-family: 'Cairo', Arial, sans-serif; background: #1a1a1a; color: #fff; padding: 30px;}
+    h2 { color: #e63946;}
+    .ip-card {background: #333; margin: 15px 0; padding: 15px; border-radius: 8px;}
+    .ip {font-weight: bold; color: #43ff64;}
+    .time {font-size: 0.9em; color: #bbb;}
+    .ua {font-size: 0.85em; color: #aaa;}
+    .center {text-align:center;}
+    input, button {padding:8px; border-radius:4px; border:none;}
+    #status {margin: 10px 0; color: #f5cb42;}
+  </style>
+</head>
+<body>
+  <h2 class="center">سجل الزيارات (IP Logger)</h2>
+  <div id="ips"></div>
+
+  <hr>
+  <h3>إضافة زيارة جديدة</h3>
+  <div>
+    <button onclick="addVisit()">تسجيل زيارتي الآن</button>
+    <div id="status"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
